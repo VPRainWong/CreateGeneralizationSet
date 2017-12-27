@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.genset"
+		name="Generalization Set"
+		description="Create Generalization Set"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.genset.GeneralizationSetPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.genset.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.genset.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.genset.actionset1.GeneralizationSetAction"
+					actionType="generalAction"
+      		name="Generalization Set"
+		      description="Create Generalization Set"
+					style="normal"
+          tooltip="Create Generalization Set"
+          icon="icon/gen_set.png"
+					toolbarPath="com.vp.plugin.sample.genset.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.genset.actions.GeneralizationSetActionControl"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
